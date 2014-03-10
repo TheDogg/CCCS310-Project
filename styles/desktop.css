@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+
+/* Using the universal selector to remove the margin and padding */
+* {
+    margin:0;
+    padding:0;
+}
+
+/* Styling the container id selector */
+#container {
+    margin: 0 auto;
+    width: 950px;
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+body{
+    background-color: #000000;
+}
+
+/* Styling the header id selector */
+#header {
+    width: 950px;
+    height: 100px;
+   /*
+       Gradient is not supported on IE 9 and lower
+       http://stackoverflow.com/questions/19980079/how-to-make-background-image-with-linear-gradient-work-on-ie-11
+       */
+    background: linear-gradient(to right, #000, #444444);
+    margin: 0 0 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Styling the navigation id selector */
+#navigation {
+    width: 950px;
+    height: 50px;
+    background-color: black;
+    margin: 0 0 0 0;
+    padding: 0;
+    
+}
+
+/* Styling the li selector */
+li {
+    display: inline;
+    background-color: #444444;
+    color: #050485;
+    padding: 0 4px;
+}
+
+/* Styling the content selector */
+#content {
+    width: 730px;
+    margin: 0 0 0 0;
+    padding: 5px;
+    background-color: #000000;
+    float: left;
+    color: white;
+}
+/* Styling the sideblock1 selector */
+#sideblock1 {
+    width: 200px;
+    margin: 0 0 0 0;
+    padding: 5px;
+    background-color: #808080;
+    float: right;
+    clear: right;
+}
+/* Styling the sideblock2 selector */
+#sideblock2 {
+    width: 200px;
+    margin: 0 0 0 0;
+    padding: 5px;
+    background-color: #444444;
+    float: right;
+    clear: right;
+}
+/* Styling the sideblock3 selector */
+#sideblock3 {
+    width: 200px;
+    margin: 0 0 0 0;
+    padding: 5px;
+    background-color: #808080;
+    float: right;
+    clear: right;
+}
+/* Styling the footer id selector */
+#footer {
+    width: 950px;
+    height: 50px;
+    clear: both;
+    margin: 0 0 0 0;
+    padding: 0;
+    background: linear-gradient(to right, #000, #444444);
+    text-align: center;
+    font-family: Verdana,sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
