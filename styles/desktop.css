@@ -43,6 +43,11 @@ body {
     font-weight: bold;
 }
 
+/* Styling the Logo */
+#logo {
+    float: left;
+}
+
 /* Styling the navigation id selector */
 #navigation {
     width:100%;
