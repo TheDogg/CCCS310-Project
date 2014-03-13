@@ -1,33 +1,43 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Join Our Community</title>
+    <title>Gaming Community</title>
     <link type="text/css" rel="stylesheet" href="styles/desktop.css" />
 </head>
 <body>
+    
     <header id="header">
-        Header
+        <div id="title" role="title">
+            <img id="logo" src="images/gaming_logo.png" height="75"/>
+            <img id="logo" src="images/title.png" height="80" />
+            <form>  
+                <input class="search_box" type="text" value="Search..."></input>
+                <input class="search_button" type="button" value="GO"></input>
+            </form>
+        </div>                   
     </header>
-    <nav id="navigation" role="navigation">
-        <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li>News</li>
-            <li>Forum</li>
-            <li>Servers</li>
-            <li><a href="join.html">Join</a></li>
-            <li>Games</li>
-            <li>Donations</li>
-            <li>Gallery</li>
-            <li>Members</li>
-            <li>Profile</li>
-        </ul>
-    </nav>
+    
     <div id="container">
+
         
+        <nav id="navigation" role="navigation">
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li>Forum</li>
+                <li>Servers</li>
+                <li><a href="join.html">Join</a></li>
+                <li>Games</li>
+                <li>Donations</li>
+                <li>Gallery</li>
+                <li>Members</li>
+                <li>Profile</li>
+            </ul>
+         </nav>     
+                       
         <section id="content" role="main">
-            <form name="join" id="join" action="formprocessing.html" method="post">
+             <form name="join" id="join" action="formprocessing.html" method="post">
                 <table id="tableJoin" summary="Join Form" border="0">
                     <tr>
                         <td><label for="firstName">First Name</label></td>
@@ -41,7 +51,8 @@
                 </table>
             </form>
             
-        </section>
+        </section>         
+        
         <section id="sideblock1" role="main">
             SideBlock 1
         </section>
@@ -51,10 +62,16 @@
         <section id="sideblock3" role="main">
             SideBlock 3
         </section>
+
+        
+    <footer id="footer">
+            <img id="logo" src="images/title.png" height="30"></img>
+    </footer>
+
         
     </div>
-    <footer id="footer">
-        Footer
-    </footer>
+
+        
+    
 </body>
 </html>
