@@ -88,8 +88,15 @@ body {
     border-radius:.5em;
     margin: 0 0 0 0;
     padding:5px 0 5px 0;
+    font-family:Arial, Sans-Serif;
+    text-transform:uppercase;
     text-align:center;
     
+}
+
+a
+{
+    color:#ccc;
 }
 
 /* Styling the li selector */
@@ -156,8 +163,8 @@ li {
 }
 /* Styling the footer id selector */
 #footer {
-    width:950px;
-    height: 50px;
+    width:940px;
+    height: 35px;
     clear: both;
     background: #1f1f1f;
     border-width:thin;
@@ -165,11 +172,11 @@ li {
     border-color:#909090;
     border-radius:.5em;
     margin: 0 0 0 0;
-    padding: 0;
+    padding:5px 0 5px 10px;
     background: linear-gradient(to right, #000, #444444);
     text-align: center;
     font-family: Verdana,sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     color: #FFFFFF;
     bottom:0;
 }
