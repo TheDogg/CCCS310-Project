@@ -8,12 +8,12 @@
 <body>
     
     <header id="header">
-        <div id="title" role="title">
-            <img id="logo" src="images/gaming_logo.png" height="75"/>
-            <img id="logo" src="images/title.png" height="80" />
+        <div id="title">
+            <img class="logo" src="images/gaming_logo.png" height="75" alt="The Unleashed Fury"/>
+            <img class="logo" src="images/title.png" height="80" alt="The Unleashed Fury"/>
             <form>  
-                <input class="search_box" type="text" value="Search..."></input>
-                <input class="search_button" type="button" value="GO"></input>
+                <input class="search_box" type="text" value="Search...">
+                <input class="search_button" type="button" value="GO">
             </form>
         </div>                   
     </header>
@@ -37,7 +37,12 @@
          </nav>     
                        
         <section id="content" role="main">
-            Content          
+            <article id="article" role="article">
+            <h2>Welcome to "The Unleashed Fury" Gaming community</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor lacus vel risus ullamcorper tempor. Pellentesque vestibulum vulputate odio sit amet adipiscing.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor lacus vel risus ullamcorper tempor. Pellentesque vestibulum vulputate odio sit amet adipiscing.</p>
+            </article>
         </section>
         <section id="sideblock1" role="main">
             SideBlock 1
@@ -46,18 +51,20 @@
             SideBlock 2
         </section>
         <section id="sideblock3" role="main">
-            SideBlock 3
+            <div id="donations" role="link">
+            
+            <a href="donations.html">Donate with<img src="images/paypal.png" height="80" width="90" alt="Donations"></a>
+            </div>
         </section>
 
         
     <footer id="footer">
-            <img id="logo" src="images/title.png" height="30"></img>
+            <img class="logo" src="images/title.png" height="30" alt="The Unleashed Fury">
             The Unleashed Fury 2014 by Sebastien Gascon and Alejandro Ulloa
-            <ul id="footer_links" role="menu"> 
-                <a href="contact.html">CONTACT</a>
-                <a href="about.html">ABOUT</a>
-                <a href="terms.html">TERMS</a>
-            </ul>
+            <br>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="terms.html">TERMS</a>
     </footer>
 
         
