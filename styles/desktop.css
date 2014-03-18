@@ -144,9 +144,39 @@ h2
     margin: 5px 0 5px 0;
     padding: 5px;
     background-color: #1f1f1f;
+    color: #FFFFFF;
     float: right;
     clear: right;
+
 }
+
+/* Styling the GameServer images */
+.gameServerImage {
+    float: left;
+    width: 50px;
+    height: 54px;
+    margin: 5px;
+    clear: both;
+}
+#gameServer1Status {
+    color: #32980f;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+#gameServer1Players {
+    color: #0066ff;
+    font-weight: bold;
+}
+#gameServer2Status {
+    color: #d01526;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+#gameServer2Players {
+    color: #0066ff;
+    font-weight: bold;
+}
+
 /* Styling the sideblock2 selector */
 #sideblock2 {
     width: 190px;
@@ -170,18 +200,14 @@ h2
     margin: 0 0 5px 0;
     padding: 5px;
     background-color: #1f1f1f;
+    color: #FFFFFF;
     float: right;
     clear: right;
 }
 
-#donations
-{
-    padding: 5px;
-    color: #FFFFFF;
-}
 /* Styling the donation button */
 #donate {
-    margin-left: 45px;
+    margin-left: 50px;
     background-image: url(../images/paypal-small.png);
     background-repeat: no-repeat;
     width: 90px;

@@ -40,23 +40,32 @@
             </article>
         </section>
         <section id="sideblock1" role="main">
-            SideBlock 1
+            <div id="gameServer1" role="complementary">
+                <img src="images/gameserver.png" alt="Game Server" class="gameServerImage" />
+                <p><span>Status: </span><span id="gameServer1Status">Online</span></p>
+                <p><span>Players: </span><span id="gameServer1Players">30/32</span></p>
+                <p><span>Game: </span><span id="gameServer1Game">GTA V</span></p>
+            </div>
+            <div id="gameServer2" role="complementary">
+                <br /><img src="images/gameserver.png" alt="Game Server" class="gameServerImage" />
+                <p><span>Status: </span><span id="gameServer2Status">Offline</span></p>
+                <p><span>Players: </span><span id="gameServer2Players">0/32</span></p>
+                <p><span>Game: </span><span id="gameServer2Game">BattleField 4</span></p>
+            </div>
         </section>
         <section id="sideblock2" role="main">
             SideBlock 2
         </section>
         <section id="sideblock3" role="main">
-            <div id="donations" role="link">
-                <form method="post" action="http://www.paypal.com">
-                    <label for="amount">Amount: $ </label><input type="text" name="amount" id="amount" size="5" placeholder="5.00" /><br /><br />
-                    <label for="period">Period: </label><select name="period" id="period">
-                        <option value="oneTime" selected>One Time</option>
-                        <option value="monthly">Monthly</option>
-                        <option value="annually">Annually</option>
-                    </select><br /><br />
-                    <input type="submit" id="donate" value="">
-                </form>
-</div>
+            <form method="post" action="http://www.paypal.com">
+                <label for="amount">Amount: $ </label><input type="text" name="amount" id="amount" size="5" placeholder="5.00" /><br /><br />
+                <label for="period">Period: </label><select name="period" id="period">
+                    <option value="oneTime" selected>One Time</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="annually">Annually</option>
+                </select><br /><br />
+                <input type="submit" id="donate" value="">
+            </form>
         </section>
 
         
