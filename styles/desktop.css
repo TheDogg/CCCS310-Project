@@ -74,6 +74,7 @@ body {
 .search_button
 {
     font-size:13px;
+    width: 30px;
     border-radius:2em;  
 }
 
@@ -175,10 +176,22 @@ h2
 
 #donations
 {
-    width:100px;
-    margin-left:auto;
-    margin-right:auto;
+    padding: 5px;
+    color: #FFFFFF;
 }
+/* Styling the donation button */
+#donate {
+    margin-left: 45px;
+    background-image: url(../images/paypal-small.png);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 56px;
+    border: 0px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    outline: 0;
+}
+
 
 /* Styling the footer id selector */
 #footer {
