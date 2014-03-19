@@ -16,7 +16,7 @@
     left:0;
     right:0;
     top:80px;
-    width: 950px;
+    width: 1100px;
     background-color: #000000;
     border: 1px solid #000000;
     
@@ -99,6 +99,12 @@ a
 {
     color:#ccc;
 }
+a:hover {
+    color: #0066ff;
+    text-decoration: underline overline;
+    font-weight: bolder;
+}
+
 
 /* Styling the li selector */
 li {
@@ -112,7 +118,7 @@ li {
 /* Styling the content selector */
 #content {
     min-height:80%;
-    width: 730px;
+    width: 880px;
     background: #1f1f1f;
     border-width:thin;
     border-style:solid;
@@ -129,6 +135,7 @@ li {
 h2
 {
     color:#0066ff;
+    text-align: center;
 }
 
 
@@ -147,10 +154,12 @@ h2
     color: #FFFFFF;
     float: right;
     clear: right;
-
 }
 
-/* Styling the GameServer images */
+/* Styling the GameServer Block */
+.gameServerTitles {
+    text-decoration: underline;
+}
 .gameServerImage {
     float: left;
     width: 50px;
@@ -163,20 +172,23 @@ h2
     text-transform:uppercase;
     font-weight: bold;
 }
-#gameServer1Players {
-    color: #0066ff;
-    font-weight: bold;
-}
 #gameServer2Status {
     color: #d01526;
     text-transform:uppercase;
     font-weight: bold;
 }
-#gameServer2Players {
+#gameServer3Status {
+    color: #32980f;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+.gameServerPlayers {
     color: #0066ff;
     font-weight: bold;
 }
-
+.gameServerGame {
+    color: #c8bf50;
+}
 /* Styling the sideblock2 selector */
 #sideblock2 {
     width: 190px;
@@ -218,10 +230,24 @@ h2
     outline: 0;
 }
 
+/* Styling the Games Page */
+.gameInfoLeft img {
+    float: left;
+    clear: both;
+}
+.gameInfoLeft {
+    font-size: 12px;
+}
+.gameInfoRight {
+    font-size: 12px;
+}
+.gameInfoRight img {
+    float: right;
+    clear: both;
+}
 
 /* Styling the footer id selector */
 #footer {
-    width:940px;
     height: 35px;
     clear: both;
     background: #1f1f1f;

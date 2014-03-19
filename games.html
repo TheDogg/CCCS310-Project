@@ -31,17 +31,65 @@
                 <li><a href="profile.html">Profile</a></li>
             </ul>
         </nav>
-        <section id="content" role="main"></section>
+        <section id="content" role="main">
+            <h2>List of Games Our Community Supports</h2>
+            <div class="gameInfoLeft">
+                <h3>Grand Theft Auto V</h3>
+                <img src="images/Grand_Theft_Auto_V.png" alt="Grand Theft Auto V" width="150" height="185">
+                <p>Los Santos: a sprawling sun-soaked metropolis full of self-help gurus, starlets and fading celebrities, once the envy of the Western world, now struggling to stay afloat in an era of economic uncertainty and cheap reality TV.</p>
+                <p>Three criminals plot their own chances of survival and success: Franklin, a former street gangster, now looking for real opportunities; Michael, a professional ex-con whose retirement is a lot less rosy than he hoped it would be; and Trevor, a violent maniac driven by the chance of a cheap high and the next big score. Running out of options, the crew risks everything in a series of dangerous heists that could set them up for life.</p>
+                <p>The biggest, most dynamic and most diverse open world ever created, Grand Theft Auto V blends storytelling and gameplay in new ways as players repeatedly jump in and out of the lives of the game's three lead characters.</p>
+                <p>All the classic hallmarks of the groundbreaking series return, alongside a brand new and ambitious approach to open world multiplayer.</p>
+                <span class="gamePlatforms"></span>
+            </div>
+            <div class="gameInfoRight">
+                <h3>Battlefield 4</h3>
+                <img src="images/Battlefield_4.png" alt="Battlefield 4" width="150" height="185">
+                <p>Los Santos: a sprawling sun-soaked metropolis full of self-help gurus, starlets and fading celebrities, once the envy of the Western world, now struggling to stay afloat in an era of economic uncertainty and cheap reality TV.</p>
+                <p>Three criminals plot their own chances of survival and success: Franklin, a former street gangster, now looking for real opportunities; Michael, a professional ex-con whose retirement is a lot less rosy than he hoped it would be; and Trevor, a violent maniac driven by the chance of a cheap high and the next big score. Running out of options, the crew risks everything in a series of dangerous heists that could set them up for life.</p>
+                <p>The biggest, most dynamic and most diverse open world ever created, Grand Theft Auto V blends storytelling and gameplay in new ways as players repeatedly jump in and out of the lives of the game's three lead characters.</p>
+                <p>All the classic hallmarks of the groundbreaking series return, alongside a brand new and ambitious approach to open world multiplayer.</p>
+            </div>
+            <div class="gameInfoLeft">
+                <h3>Call Of Duty Ghosts</h3>
+                <img src="images/Call_of_Duty_Ghosts.png" alt="Call Of Duty Ghosts" width="150" height="185">
+                
+            </div>
+        </section>
         <section id="sideblock1" role="main">
-            SideBlock 1
+            <div id="gameServer1" role="complementary">
+                <img src="images/gameserver.png" alt="Game Server" class="gameServerImage" />
+                <p><span class="gameServerTitles">Status:</span> <span id="gameServer1Status">Online</span></p>
+                <p><span class="gameServerTitles">Players:</span> <span class="gameServerPlayers">30/32</span></p>
+                <p><span class="gameServerTitles">Game:</span> <span class="gameServerGame">GTA V</span></p>
+            </div>
+            <div id="gameServer2" role="complementary">
+                <br /><img src="images/gameserver.png" alt="Game Server" class="gameServerImage" />
+                <p><span class="gameServerTitles">Status:</span> <span id="gameServer2Status">Offline</span></p>
+                <p><span class="gameServerTitles">Players:</span> <span class="gameServerPlayers">0/32</span></p>
+                <p><span class="gameServerTitles">Game:</span> <span class="gameServerGame">BattleField 4</span></p>
+            </div>
+            <div id="gameServer3" role="complementary">
+                <br /><img src="images/gameserver.png" alt="Game Server" class="gameServerImage" />
+                <p><span class="gameServerTitles">Status:</span> <span id="gameServer3Status">Offline</span></p>
+                <p><span class="gameServerTitles">Players:</span> <span class="gameServerPlayers">32/32</span></p>
+                <p><span class="gameServerTitles">Game:</span> <span class="gameServerGame">Call Of Duty Ghosts</span></p>
+            </div>
         </section>
         <section id="sideblock2" role="main">
             SideBlock 2
         </section>
         <section id="sideblock3" role="main">
-            SideBlock 3
+            <form method="post" action="http://www.paypal.com">
+                <label for="amount">Amount: $ </label><input type="text" name="amount" id="amount" size="5" placeholder="5.00" /><br /><br />
+                <label for="period">Period: </label><select name="period" id="period">
+                    <option value="oneTime" selected>One Time</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="annually">Annually</option>
+                </select><br /><br />
+                <input type="submit" id="donate" value="">
+            </form>
         </section>
-
         <footer id="footer" role="contentinfo">
             <img class="logo" src="images/title.png" height="30" alt="The Unleashed Fury">
             The Unleashed Fury 2014 by Sebastien Gascon and Alejandro Ulloa
