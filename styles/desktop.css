@@ -252,6 +252,13 @@ h2
 .gameInfo {
     list-style-type: none;
 }
+.gameInfo h3 {
+    font-size: 16px;
+    color: #c8bf50;
+}
+.gameInfoRight h3 {
+    text-align: right;
+}
 
 /* Styling the footer id selector */
 #footer {
