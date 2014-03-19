@@ -106,8 +106,8 @@ a:hover {
 }
 
 
-/* Styling the li selector */
-li {
+/* Styling the navbar class */
+.navbar {
     display: inline;
     background-color: #444444;
     font-size:12px;
@@ -233,17 +233,24 @@ h2
 /* Styling the Games Page */
 .gameInfoLeft img {
     float: left;
-    clear: both;
+    clear: left;
 }
 .gameInfoLeft {
+    padding-top: 10px;
+    float: left;
     font-size: 12px;
 }
 .gameInfoRight {
+    padding-top: 10px;
+    float: right;
     font-size: 12px;
 }
 .gameInfoRight img {
     float: right;
-    clear: both;
+    clear: right;
+}
+.gameInfo {
+    list-style-type: none;
 }
 
 /* Styling the footer id selector */
