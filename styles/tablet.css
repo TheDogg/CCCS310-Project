@@ -6,7 +6,8 @@
 /* Styling the sideblock1 selector */
 #sideblock1 
 {
-    display:none;
+    width: 70%;
+    height:150px;
     margin-top:5px;
     margin-bottom:5px;
     float: left;
@@ -16,13 +17,36 @@
 .gameServerTitles {
     text-decoration: underline;
 }
-.gameServerImage {
+.gameServer {
+    
+}
+#gameServer1 {
+    float: left;
+    margin-top: 40px;
+    width: 25%;
+}
+#gameServer2 {
+    float: left;
+    margin-top: 40px;
+    
+    width: 30%;
+}
+#gameServer3 {
+    float: left; 
+    margin-top: 40px;
+   
+    width: 35%;
+}
+/* Inserting images for GameServers*/
+div.imgGameServer {
+    content: url(../images/gameserver.png);
     float: left;
     width: 50px;
     height: 54px;
     margin: 5px;
     clear: both;
 }
+
 #gameServer1Status {
     color: #32980f;
     text-transform:uppercase;
@@ -47,11 +71,11 @@
 }
 /* Styling the sideblock2 selector */
 #sideblock2 {
-    width: 70%;
-    height:150px;
+    display:none;
     margin-top:5px;
     margin-bottom:5px;
     float: left;
+    
 }
 /* Styling the sideblock3 selector */
 #sideblock3 {

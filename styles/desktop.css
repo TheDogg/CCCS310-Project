@@ -37,13 +37,26 @@
 .gameServerTitles {
     text-decoration: underline;
 }
-.gameServerImage {
+#gameServer1 {
+    padding-top: 0px;
+}
+#gameServer2 {
+    padding-top: 10px;
+}
+#gameServer3 {
+    padding-top: 10px;
+    
+}
+/* Inserting images for GameServers*/
+div.imgGameServer {
+    content: url(../images/gameserver.png);
     float: left;
     width: 50px;
     height: 54px;
     margin: 5px;
     clear: both;
 }
+
 #gameServer1Status {
     color: #32980f;
     text-transform:uppercase;
