@@ -103,3 +103,17 @@
 .gameInfoRight h3 {
     text-align: right;
 }
+
+/* Inserting images for Games */
+div.imgLeft1 {
+    content: url(../images/Grand_Theft_Auto_V.png);
+    float: left;
+}
+div.imgRight1 {
+    content: url(../images/Battlefield_4.png);
+    float: right;
+}
+div.imgLeft2 {
+    content: url(../images/Call_of_Duty_Ghosts.png);
+    float: left;
+}
