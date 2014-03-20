@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Gaming Community</title>
-    <link type="text/css" rel="stylesheet" href="styles/desktop.css" />
+    <link type="text/css" rel="stylesheet" href="styles/layouts.css" />
 </head>
 <body> 
     <header id="header" role="banner">
@@ -11,8 +11,8 @@
             <img class="logo" src="images/gaming_logo.png" height="75" alt="The Unleashed Fury"/>
             <img class="logo" src="images/title.png" height="80" alt="The Unleashed Fury"/>
             <form>  
-                <input type="text" class="search_box" placeholder="Search..." />
-                <input type="button" class="search_button" value="GO" />
+                <input type="text" id="search_box" placeholder="Search..." />
+                <input type="button" id="search_button" value="GO" />
             </form>
         </div>                   
     </header>
@@ -64,12 +64,14 @@
         </section>
         <section id="sideblock3" role="main">
             <form method="post" action="http://www.paypal.com">
-                <label for="amount">Amount: $ </label><input type="text" name="amount" id="amount" size="5" placeholder="5.00" /><br /><br />
-                <label for="period">Period: </label><select name="period" id="period">
-                    <option value="oneTime" selected>One Time</option>
-                    <option value="monthly">Monthly</option>
-                    <option value="annually">Annually</option>
-                </select><br /><br />
+                <div id="donate_dropdown" role="complementary">
+                    <label for="amount">Amount: $ </label><input type="text" name="amount" id="amount" size="5" placeholder="5.00" /><br /><br />
+                    <label for="period">Period: </label><select name="period" id="period">
+                        <option value="oneTime" selected>One Time</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="annually">Annually</option>
+                    </select><br /><br />
+                </div>
                 <input type="submit" id="donate" value="">
             </form>
         </section>        
