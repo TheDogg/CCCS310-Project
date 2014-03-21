@@ -1,0 +1,203 @@
+﻿@charset "utf-8";
+
+/* Using the universal selector to remove the margin and padding */
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #000000;
+}
+
+/* Styling the container id selector */
+#container {
+    height:100%;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:3px;
+    left:0;
+    right:0;
+    top:80px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    
+}
+
+/* Styling the header id selector */
+#header 
+{
+    height: 80px;
+    
+    /*
+       Gradient is not supported on IE 9 and lower
+       http://stackoverflow.com/questions/19980079/how-to-make-background-image-with-linear-gradient-work-on-ie-11
+    */
+    background: linear-gradient(to right, #000, #444444);
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Styling the Header Logos */
+
+#title
+{
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    float: left;
+    margin-top:5px;
+    
+}
+
+/* Styling the search form */
+
+#search_box
+{
+    padding:3px 3px 3px 3px;
+    width:180px;
+    border:1px solid #BCBBBB;
+    border-radius: .5em;
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+#search_button
+{
+    font-size:13px;
+    width: 30px;
+    border-radius:2em;  
+}
+
+
+
+/* Styling the navigation id selector */
+#navigation {
+    background: #1f1f1f;
+    border-width:thin;
+    border-style:solid;
+    border-color:#909090;
+    border-radius:.5em;
+    margin: 0 0 0 0;
+    padding:5px 0 5px 0;
+    font-family:Arial, Sans-Serif;
+    text-transform:uppercase;
+    text-align:center;
+    
+}
+
+a
+{
+    color:#ccc;
+}
+a:hover {
+    color: #0066ff;
+    text-decoration: underline overline;
+    font-weight: bolder;
+}
+
+
+/* Styling the navbar class */
+.navbar {
+    display: inline;
+    background-color: #444444;
+    font-size:12px;
+    color: #050485;
+    padding: 0 4px;
+}
+
+/* Styling the content selector */
+#content {
+    min-height:80%;
+    background: #1f1f1f;
+    border-width:thin;
+    border-style:solid;
+    border-color:#909090;
+    border-radius:.5em;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    float: left;
+    color: white;
+    font-family:Arial, Sans-Serif;
+}
+
+/*Styling the article selector */
+h2
+{
+    color:#0066ff;
+    text-align: center;
+}
+
+/* Styling the sideblock1 selector */
+#sideblock1 {
+    background: #1f1f1f;
+    border-width:thin;
+    border-style:solid;
+    border-color:#909090;
+    border-radius:.5em;
+    padding: 5px;
+    background-color: #1f1f1f;
+    color: #FFFFFF;
+    clear: right;
+}
+
+/* Styling the sideblock2 selector */
+#sideblock2 {
+    border-width:thin;
+    border-style:solid;
+    border-color:#909090;
+    border-radius:.5em;
+    padding: 5px;
+    background-color: #444444;
+    clear: right;
+}
+
+/* Styling the sideblock3 selector */
+#sideblock3 {
+    border-width:thin;
+    border-style:solid;
+    border-color:#909090;
+    border-radius:.5em;
+    padding: 5px;
+    background-color: #1f1f1f;
+    color: #FFFFFF;
+    float: right;
+    clear: right;
+}
+
+/* Styling the donations */
+#donate {
+    background-image: url(../images/paypal-small.png);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 56px;
+    border: 0px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    outline: 0;
+}
+
+/* Styling the footer id selector */
+#footer {
+    height: 35px;
+    clear: both;
+    background: #1f1f1f;
+    border-width:thin;
+    border-style:solid;
+    border-color:#909090;
+    border-radius:.5em;
+    margin: 0 0 0 0;
+    padding:5px 0 5px 10px;
+    background: linear-gradient(to right, #000, #444444);
+    text-align: center;
+    font-family: Verdana,sans-serif;
+    font-size: 10px;
+    color: #FFFFFF;
+    bottom:0;
+}
