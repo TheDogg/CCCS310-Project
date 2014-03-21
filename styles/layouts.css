@@ -4,10 +4,10 @@
 @import url("generic.css") only screen;
 
 /* Desktop */
-@import url("desktop.css")  only screen and (min-width:1100px);
+@import url("desktop.css")  only screen and (min-width:769px);
 
 /* tablet */
-@import url("tablet.css") only screen and (max-width:1100px);
+@import url("tablet.css") only screen and (min-width: 401px) and (max-width:768px);
 
 /* Phone */
 @import url("phone.css") only screen and (max-width:400px);
