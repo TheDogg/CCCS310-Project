@@ -7,8 +7,8 @@
 @import url("desktop.css")  only screen and (min-width:769px);
 
 /* tablet */
-@import url("tablet.css") only screen and (min-width: 401px) and (max-width:768px);
+@import url("tablet.css") only screen and (min-width: 571px) and (max-width:768px);
 
 /* Phone */
-@import url("phone.css") only screen and (max-width:400px);
+@import url("phone.css") only screen and (max-width:570px);
 

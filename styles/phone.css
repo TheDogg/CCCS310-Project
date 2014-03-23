@@ -1,5 +1,26 @@
 ﻿@charset "utf-8";
 
-body
+#sideblock1
 {
+    display:none;    
+}
+
+#sideblock2
+{
+    display:none;
+}    
+    
+#sideblock3
+{
+    display:none;
+}
+
+#search_box
+{
+    display:none;
+}
+
+#search_button
+{
+    display:none;
 }
