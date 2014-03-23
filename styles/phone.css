@@ -1,5 +1,13 @@
 ﻿@charset "utf-8";
 
+/* Styling the navbar class */
+
+.navbar {   font-size:large;
+}
+
+
+/* Removing sideblocks and search field*/
+
 #sideblock1
 {
     display:none;    
@@ -23,4 +31,30 @@
 #search_button
 {
     display:none;
+}
+
+/* Styling the Games Page */
+.gameInfo h3 {
+    font-size: 16px;
+    color: #c8bf50;
+    text-align:center;
+    padding:30px 0 10px 0;
+}
+
+/* Inserting images for Games */
+div.imgLeft1 {
+    content: url(../images/Grand_Theft_Auto_V.png);
+    margin-right:auto;
+    margin-left:auto;
+}
+div.imgRight1 {
+    content: url(../images/Battlefield_4.png);
+    margin-right:auto;
+    margin-left:auto;
+}
+div.imgLeft2 {
+    content: url(../images/Call_of_Duty_Ghosts.png);
+    margin-right:auto;
+    margin-left:auto;
+    
 }
