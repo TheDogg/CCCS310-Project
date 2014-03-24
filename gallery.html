@@ -1,21 +1,40 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Gallery</title>
-    <link type="text/css" rel="stylesheet" href="styles/desktop.css" />
+    <title>Gaming Community</title>
+    <link type="text/css" rel="stylesheet" href="styles/layouts.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/JavaScript">
+        // prepare the form when the DOM is ready 
+        $(document).ready(function () {
+            $("#gallery li img").hover(function () {
+                $('#main-img').attr('src', $(this).attr('src').replace('thumb/', ''));
+            });
+            var imgSwap = [];
+            $("#gallery li img").each(function () {
+                imgUrl = this.src.replace('thumb/', '');
+                imgSwap.push(imgUrl);
+            });
+            $(imgSwap).preload();
+        });
+        $.fn.preload = function () {
+            this.each(function () {
+                $('<img/>')[0].src = this;
+            });
+        }
+    </script>
 </head>
-<body>
+<body> 
     <header id="header" role="banner">
         <div id="title">
-            <img class="logo" src="images/gaming_logo.png" height="75" alt="The Unleashed Fury" />
-            <img class="logo" src="images/title.png" height="80" alt="The Unleashed Fury" />
-            <form>
-                <input class="search_box" type="text" value="Search..." />
-                <input class="search_button" type="button" value="GO" />
+            <img class="logo" src="images/gaming_logo.png" height="75" alt="The Unleashed Fury"/>
+            <img class="logo" src="images/title.png" height="80" alt="The Unleashed Fury"/>
+            <form>  
+                <input type="text" id="search_box" placeholder="Search..." />
+                <input type="button" id="search_button" value="GO" />
             </form>
-        </div>
+        </div>                   
     </header>
     <div id="container">
         <nav id="navigation" role="navigation">
@@ -30,27 +49,33 @@
                 <li class="navbar"><a href="members.html">Members</a></li>
                 <li class="navbar"><a href="profile.html">Profile</a></li>
             </ul>
-        </nav>
-        <section id="content" role="main"></section>
-        <section id="sideblock1" role="main">
-            SideBlock 1
+         </nav>            
+        <section id="navigation" role="complimentary">
+            <div id="gallery">
+                    <ul>
+                      <li><img src="images/gallery/thumb/slide0.jpg" alt="" /></li>
+                      <li><img src="images/gallery/thumb/slide1.jpg" alt="" /></li>
+                      <li><img src="images/gallery/thumb/slide2.png" alt="" /></li>
+                      <li><img src="images/gallery/thumb/slide4.jpg" alt="" /></li>
+                      <li><img src="images/gallery/thumb/slide5.png" alt="" /></li>
+                    </ul>
+             </div>
         </section>
-        <section id="sideblock2" role="main">
-            SideBlock 2
-        </section>
-        <section id="sideblock3" role="main">
-            SideBlock 3
-        </section>
-
-        <footer id="footer" role="contentinfo">
+         <img src="images/gallery/slide0.jpg" alt="" id="main-img" />
+       
+    <footer id="footer" role="contentinfo">
             <img class="logo" src="images/title.png" height="30" alt="The Unleashed Fury">
             The Unleashed Fury 2014 by Sebastien Gascon and Alejandro Ulloa
             <br>
             <a href="contact.html">CONTACT</a>
             <a href="about.html">ABOUT</a>
             <a href="terms.html">TERMS</a>
-        </footer>
+    </footer>
 
+        
     </div>
+
+        
+    
 </body>
 </html>
