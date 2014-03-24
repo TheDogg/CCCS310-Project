@@ -25,6 +25,12 @@ body {
     
 }
 
+#container ol
+{
+    margin-left:30px;
+
+}
+
 /* Styling the header id selector */
 #header 
 {
