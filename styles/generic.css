@@ -217,10 +217,9 @@ h2
     border-style:solid;
     border-color:#909090;
     border-radius:.5em;
-    margin: 0 0 0 0;
+    margin: 5px 0 10px 0;
     padding:5px 0 5px 0;
     font-family:Arial, Sans-Serif;
-    text-transform:uppercase;
     text-align:center;
     
 }
@@ -228,4 +227,10 @@ h2
 #gallery li
 {
     display:inline;
+}
+
+img.resize
+{
+    width:100%;
+    
 }
