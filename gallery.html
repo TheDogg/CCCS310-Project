@@ -6,7 +6,7 @@
     <link type="text/css" rel="stylesheet" href="styles/layouts.css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/JavaScript">
-        // prepare the form when the DOM is ready 
+        
         $(document).ready(function () {
             $("#gallery li img").hover(function () {
                 $('#main-img').attr('src', $(this).attr('src').replace('thumb/', ''));
@@ -50,7 +50,7 @@
                 <li class="navbar"><a href="profile.html">Profile</a></li>
             </ul>
          </nav>            
-        <section id="thumbs" role="complimentary">
+        <section id="thumbs">
             <div id="gallery">
                     <ul>
                       <li><img src="images/gallery/thumb/slide0.jpg" alt="" /></li>
