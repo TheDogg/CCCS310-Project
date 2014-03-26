@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Join our Community</title>
     <link type="text/css" rel="stylesheet" href="styles/layouts.css" />
+	<meta name="viewport" content="width=device-width" />
 </head>
 <body>
     <header id="header" role="banner">
@@ -35,11 +36,11 @@
                 <table id="tableJoin">
                     <tr>
                         <td><label for="firstName">First Name</label></td>
-                        <td><input type="text" name="firstName" id="firstName" size="35" maxlength="20" /></td>
+                        <td><input type="text" name="firstName" id="firstName" size="35" maxlength="20" required /></td>
                     </tr>
                     <tr>
                         <td><label for="lastName">Last Name</label></td>
-                        <td><input type="text" name="lastName" id="lastName" size="35" maxlength="20" /></td>
+                        <td><input type="text" name="lastName" id="lastName" size="35" maxlength="20" required /></td>
                     </tr>
                     <tr>
                         <td><label for="age">Age</label></td>
@@ -47,7 +48,7 @@
                     </tr>
                     <tr>
                         <td><label>Gender</label></td>
-                        <td><input type="radio" name="gender" id="male" value="male" /> Male <br /><input type="radio" name="gender" id="female" value="female" /> Female</td>
+                        <td><input type="radio" name="gender" id="male" value="male" checked /> Male <br /><input type="radio" name="gender" id="female" value="female" /> Female</td>
                     </tr>
                     <tr>
                         <td><label for="country">Country</label></td>
@@ -303,19 +304,19 @@
                     </tr>
                     <tr>
                         <td><label for="email">E-mail Address</label></td>
-                        <td><input type="email" name="email" id="email" size="35" /></td>
+                        <td><input type="email" name="email" id="email" size="35" placeholder="email@domain.com" data-validation="email" /></td>
                     </tr>
                     <tr>
                         <td><label for="username">Username</label></td>
-                        <td><input type="text" name="username" id="username" size="35" /></td>
+                        <td><input type="text" name="username" id="username" size="35" maxlength="12" data-validation="length alphanumeric" data-validation-allowing="-_" data-validation-length="3-12" data-validation-error-msg="The user name has to be an alphanumeric value between 3-12 characters" /></td>
                     </tr>
                     <tr>
                         <td><label for="password">Password</label></td>
-                        <td><input type="password" name="password" id="password" size="35" /></td>
+                        <td><input type="password" name="password" id="password" size="35" data-validation="strength" data-validation-strength="2" /></td>
                     </tr>
                     <tr>
                         <td><label for="confirmpassword">Confirm Password</label></td>
-                        <td><input type="password" name="confirmpassword" id="confirmpassword" size="35" /></td>
+                        <td><input type="password" name="confirmpassword" id="confirmpassword" size="35"  /></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -323,56 +324,75 @@
                     </tr>
                 </table>
             </form>
-        </section>
-        <section id="sideblock1" role="main">
-            <div id="gameServer1" class="gameServer" role="complementary">
-                <div class="imgGameServer"></div>
-                <span class="gameServerTitles">Game:</span> <span class="gameServerGame">GTA V<br /></span>
-                <span class="gameServerTitles">Status:</span> <span id="gameServer1Status">Online<br /></span>
-                <span class="gameServerTitles">Players:</span> <span class="gameServerPlayers">30/32</span>
-            </div>
-            <div id="gameServer2" class="gameServer" role="complementary">
-                <div class="imgGameServer"></div>
-                <span class="gameServerTitles">Game:</span> <span class="gameServerGame">BattleField 4<br /></span>
-                <span class="gameServerTitles">Status:</span> <span id="gameServer2Status">Offline<br /></span>
-                <span class="gameServerTitles">Players:</span> <span class="gameServerPlayers">0/32</span>
-            </div>
-            <div id="gameServer3" class="gameServer" role="complementary">
-                <div class="imgGameServer"></div>
-                <span class="gameServerTitles">Game:</span> <span class="gameServerGame">Call Of Duty Ghosts<br /></span>
-                <span class="gameServerTitles">Status:</span> <span id="gameServer3Status">Online<br /></span>
-                <span class="gameServerTitles">Players:</span> <span class="gameServerPlayers">32/32</span>
-            </div>
-        </section>
-        <section id="sideblock2" role="main">
-            SideBlock 2
-        </section>
-        <section id="sideblock3" role="main">
-            <form method="post" action="http://www.paypal.com">
-                <div id="donate_dropdown" role="complementary">
-                    <label for="amount">Amount: $ </label><input type="text" name="amount" id="amount" size="5" placeholder="5.00" /><br /><br />
-                    <label for="period">Period: </label><select name="period" id="period">
-                        <option value="oneTime" selected>One Time</option>
-                        <option value="monthly">Monthly</option>
-                        <option value="annually">Annually</option>
-                    </select><br /><br />
-                </div>
-                <input type="submit" id="donate" value="">
-            </form>
-        </section>
-        <footer id="footer" role="contentinfo">
-            <img class="logo" src="images/title.png" height="30" alt="The Unleashed Fury">
-            The Unleashed Fury 2014 by Sebastien Gascon and Alejandro Ulloa
-            <br>
-            <a href="contact.html">CONTACT</a>
-            <a href="about.html">ABOUT</a>
-            <a href="terms.html">TERMS</a>
-        </footer>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+            <script src="scripts/jquery.form-validator.min.js"></script>
+            <!-- http://formvalidator.net/#default-validators -->
+            <script>
+                $.validate({
+                    modules : 'security',
+                    onModulesLoaded : function() {
+                        var optionalConfig = {
+                            fontSize: '12pt',
+                            padding: '4px',
+                            bad: 'Very bad',
+                            weak: 'Weak',
+                            good: 'Good',
+                            strong: 'Strong'
+                        };
+                        $('input[name="password"]').displayPasswordStrength(optionalConfig);
+                    }
+                });
+            </script>
+                </section>
+                <section id="sideblock1" role="main">
+                    <div id="gameServer1" class="gameServer" role="complementary">
+                        <div class="imgGameServer"></div>
+                        <span class="gameServerTitles">Game:</span> <span class="gameServerGame">GTA V<br /></span>
+                        <span class="gameServerTitles">Status:</span> <span id="gameServer1Status">Online<br /></span>
+                        <span class="gameServerTitles">Players:</span> <span class="gameServerPlayers">30/32</span>
+                    </div>
+                    <div id="gameServer2" class="gameServer" role="complementary">
+                        <div class="imgGameServer"></div>
+                        <span class="gameServerTitles">Game:</span> <span class="gameServerGame">BattleField 4<br /></span>
+                        <span class="gameServerTitles">Status:</span> <span id="gameServer2Status">Offline<br /></span>
+                        <span class="gameServerTitles">Players:</span> <span class="gameServerPlayers">0/32</span>
+                    </div>
+                    <div id="gameServer3" class="gameServer" role="complementary">
+                        <div class="imgGameServer"></div>
+                        <span class="gameServerTitles">Game:</span> <span class="gameServerGame">Call Of Duty Ghosts<br /></span>
+                        <span class="gameServerTitles">Status:</span> <span id="gameServer3Status">Online<br /></span>
+                        <span class="gameServerTitles">Players:</span> <span class="gameServerPlayers">32/32</span>
+                    </div>
+                </section>
+                <section id="sideblock2" role="main">
+                    SideBlock 2
+                </section>
+                <section id="sideblock3" role="main">
+                    <form method="post" action="http://www.paypal.com">
+                        <div id="donate_dropdown" role="complementary">
+                            <label for="amount">Amount: $ </label><input type="text" name="amount" id="amount" size="5" placeholder="5.00" /><br /><br />
+                            <label for="period">Period: </label><select name="period" id="period">
+                                <option value="oneTime" selected>One Time</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="annually">Annually</option>
+                            </select><br /><br />
+                        </div>
+                        <input type="submit" id="donate" value="">
+                    </form>
+                </section>
+                <footer id="footer" role="contentinfo">
+                    <img class="logo" src="images/title.png" height="30" alt="The Unleashed Fury">
+                    The Unleashed Fury 2014 by Sebastien Gascon and Alejandro Ulloa
+                    <br>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="terms.html">TERMS</a>
+                </footer>
 
 
-    </div>
+            </div>
 
-        
-    
-</body>
-</html>
+
+
+        </body>
+        </html>
