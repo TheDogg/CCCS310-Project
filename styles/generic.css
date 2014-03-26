@@ -235,6 +235,17 @@ img.resize
     
 }
 
+/* Inserting images for Games */
+div.imgLeft1:before {
+    content: url(../images/Grand_Theft_Auto_V.png);
+}
+div.imgRight1:before {
+    content: url(../images/Battlefield_4.png);
+}
+div.imgLeft2:before {
+    content: url(../images/Call_of_Duty_Ghosts.png);
+}
+
 /* Form validation styles */
 input.valid {
     background: url(../images/icon-ok.png) no-repeat right center #e3ffe5;

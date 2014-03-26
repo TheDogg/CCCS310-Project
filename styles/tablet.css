@@ -38,7 +38,7 @@
     width: 40%;
 }
 /* Inserting images for GameServers*/
-div.imgGameServer {
+div.imgGameServer:before {
     content: url(../images/gameserver.png);
     float: left;
     width: 50px;
@@ -129,15 +129,12 @@ div.imgGameServer {
 }
 
 /* Inserting images for Games */
-div.imgLeft1 {
-    content: url(../images/Grand_Theft_Auto_V.png);
+div.imgLeft1:before {
     float: left;
 }
-div.imgRight1 {
-    content: url(../images/Battlefield_4.png);
+div.imgRight1:before {
     float: right;
 }
-div.imgLeft2 {
-    content: url(../images/Call_of_Duty_Ghosts.png);
+div.imgLeft2:before {
     float: left;
 }
