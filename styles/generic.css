@@ -234,3 +234,23 @@ img.resize
     width:100%;
     
 }
+
+/* Form validation styles */
+input.valid {
+    background: url(../images/icon-ok.png) no-repeat right center #e3ffe5;
+    color: #002f00;
+    border-color: #96b796 !important;
+}
+input.error {
+    background: url(../images/icon-fail.png) no-repeat right center #ffebef;
+    color: #480000;
+}
+span.form-error {
+    display: block;
+    color: red;
+    margin-top: 6px;
+    padding-left: 0;
+}
+input {
+    height: 20px;
+}

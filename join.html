@@ -36,15 +36,15 @@
                 <table id="tableJoin">
                     <tr>
                         <td><label for="firstName">First Name</label></td>
-                        <td><input type="text" name="firstName" id="firstName" size="35" maxlength="20" required /></td>
+                        <td><input type="text" name="firstName" id="firstName" size="35" required data-validation="length" data-validation-length="2-20" /></td>
                     </tr>
                     <tr>
                         <td><label for="lastName">Last Name</label></td>
-                        <td><input type="text" name="lastName" id="lastName" size="35" maxlength="20" required /></td>
+                        <td><input type="text" name="lastName" id="lastName" size="35" required data-validation="length" data-validation-length="2-30" /></td>
                     </tr>
                     <tr>
                         <td><label for="age">Age</label></td>
-                        <td><input type="number" name="age" id="age" min="13" max="120" /></td>
+                        <td><input type="number" name="age" id="age" min="13" max="120" required data-validation="number" data-validation-allowing="range[13;120]" /></td>
                     </tr>
                     <tr>
                         <td><label>Gender</label></td>
@@ -311,12 +311,12 @@
                         <td><input type="text" name="username" id="username" size="35" maxlength="12" data-validation="length alphanumeric" data-validation-allowing="-_" data-validation-length="3-12" data-validation-error-msg="The user name has to be an alphanumeric value between 3-12 characters" /></td>
                     </tr>
                     <tr>
-                        <td><label for="password">Password</label></td>
-                        <td><input type="password" name="password" id="password" size="35" data-validation="strength" data-validation-strength="2" /></td>
+                        <td><label for="pass_confirmation">Password</label></td>
+                        <td><input type="password" name="pass_confirmation" id="password" size="35" data-validation="strength" data-validation-strength="2" /></td>
                     </tr>
                     <tr>
-                        <td><label for="confirmpassword">Confirm Password</label></td>
-                        <td><input type="password" name="confirmpassword" id="confirmpassword" size="35"  /></td>
+                        <td><label for="pass">Confirm Password</label></td>
+                        <td><input type="password" name="pass" id="confirmpassword" size="35" data-validation="confirmation" data-validation-error-msg="Passwords don't match" /></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -331,15 +331,7 @@
                 $.validate({
                     modules : 'security',
                     onModulesLoaded : function() {
-                        var optionalConfig = {
-                            fontSize: '12pt',
-                            padding: '4px',
-                            bad: 'Very bad',
-                            weak: 'Weak',
-                            good: 'Good',
-                            strong: 'Strong'
-                        };
-                        $('input[name="password"]').displayPasswordStrength(optionalConfig);
+                        
                     }
                 });
             </script>
