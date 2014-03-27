@@ -265,3 +265,40 @@ span.form-error {
 input {
     height: 20px;
 }
+
+
+/* Styling the news container */
+
+#news{
+    min-height:80%;
+    background: #1f1f1f;
+    border-width:thin;
+    border-style:solid;
+    border-color:#909090;
+    border-radius:.5em;
+    margin: 5px 0 10px 0;
+    padding:5px 0 5px 0;
+    font-family:Arial, Sans-Serif;
+   
+    
+}
+
+.news_element{
+    width:90%;
+    height:22em;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    color:whitesmoke;
+    
+
+    
+}
+
+.news_element img{
+    margin:5px;
+    float:right;
+    width:50%;
+    clear:both;
+}
