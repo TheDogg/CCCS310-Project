@@ -2,9 +2,57 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Gaming Community</title>
+    <title>The Unleashed Fury Store</title>
     <link type="text/css" rel="stylesheet" href="styles/layouts.css" />
     <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript">
+        //Function that update GTA qty
+        function gtaQty() {
+
+            var qty = document.getElementById("qty1").value;
+              
+            document.getElementById("quantity1").value = qty;
+
+            subtotal();
+                       
+        }
+
+        //Function that update BF qty
+        function battleQty() {
+
+            var qty = document.getElementById("qty2").value;
+
+            document.getElementById("quantity2").value = qty;
+
+            subtotal();
+
+        }
+
+        //Function that update cod qty
+        function codQty() {
+
+            var qty = document.getElementById("qty3").value;
+
+            document.getElementById("quantity3").value = qty;
+
+            subtotal();
+
+        }
+
+        //Function that calculates sub-total
+
+        function subtotal() {
+
+            var stotal = (pharseFloat(document.getElementById("quantity3").value) + pharseFloat(document.getElementById("quantity2").value) + pharseFloat(document.getElementById("quantity1").value)) * 35;
+
+            document.getElementById("subtotal").value = stotal;
+        }
+
+
+
+
+
+    </script>
 </head>
 <body> 
     <header id="header" role="banner">
@@ -52,15 +100,17 @@
                 </tr>
                 <tr>
                     <td class="options">
-                        <select name="size" id="size">
-                            <option>SIZE</option>
-                            <option>XS</option>
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
+                        <select name="qty1" id="qty1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
-                        <select name="qty" id="qty">
+                    </td>
+                    <td class="options">
+                        <select name="qty2" id="qty2">
                             <option>0</option>
                             <option>1</option>
                             <option>2</option>
@@ -70,33 +120,7 @@
                         </select>
                     </td>
                     <td class="options">
-                        <select name="size" id="size">
-                            <option>SIZE</option>
-                            <option>XS</option>
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                        </select>
-                        <select name="qty" id="qty">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </td>
-                    <td class="options">
-                        <select name="size" id="size">
-                            <option>SIZE</option>
-                            <option>XS</option>
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                        </select>
-                        <select name="qty" id="qty">
+                        <select name="qty3" id="qty3">
                             <option>0</option>
                             <option>1</option>
                             <option>2</option>
@@ -108,53 +132,55 @@
                 <tr/>
                 <tr>
                     <td class="add">
-                        <button name="add"><img src="images/store/add.png" height="50" /></button>
+                        <button name="add" onclick="gtaQty()"><img src=" images/store/add.png" height="50" /></button>
                     </td>
                     <td class="add">
-                        <button name="add"><img src="images/store/add.png" height="50" /></button>
+                        <button name="add" onclick="battleQty()"><img src="images/store/add.png" height="50" /></button>
                     </td>
                     <td class="add">
-                        <button name="add"><img src="images/store/add.png" height="50" /></button>
+                        <button name="add" onclick="codQty()"><img src="images/store/add.png" height="50" /></button>
                     </td>
 
                 </tr>
 
             
             </table>
-            <div id="order">
-                <table>
-                    <tr>
-                        <td>Product</td>
-                        <td class ="cell">Quantity</tdclass>
-                    </tr>
-                    <tr>
-                        <td>Grand theft auto V T-shirt</td>
-                        <td><input class="quantity" name="quantity" size="1" value="0" readonly="readonly" /></td>
-                        <td>Sub-total</td>
-                        <td><input class="calc" name="subtotal" size="5" value=0.00 readonly="readonly" /></td>
-                    </tr>
-                    <tr>
-                        <td>Battlefield 4 T-shirt</td>
-                        <td><input class="quantity" name="quantity" size="1" value="0" readonly="readonly" /></td>
-                        <td>Tax</td>
-                        <td><input class="calc" name="tax" size="5" value=0.00 readonly="readonly" /></td>
-                        
-                       
-                    </tr>
-                    <tr>
-                        <td>Call of Duty Ghost T-shirt</td>
-                        <td><input class="quantity" name="quantity" size="1" value="0" readonly="readonly" /></td>
-                        <td>Total</td>
-                        <td><input class="calc" name="total" size="5" value=0.00 readonly="readonly" /></td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div id="checkout">
-                <button name="checkout">
-                    <img src="images/store/checkout.gif" alt="checkout"/>
-                </button>
-            </div>
+            <form name="orderForm" id="orderForm" method="post">
+                <div id="order">
+                    <table>
+                        <tr>
+                            <td>Product</td>
+                            <td class="cell">Quantity</td>
+                        </tr>
+                        <tr>
+                            <td>Grand theft auto V T-shirt</td>
+                            <td><input id="quantity1" name="quantity1" size="1" value="0" readonly="readonly" /></td>
+                            <td>Sub-total</td>
+                            <td><input id="subtotal" name="subtotal" size="5" value=0.00 readonly="readonly" /></td>
+                        </tr>
+                        <tr>
+                            <td>Battlefield 4 T-shirt</td>
+                            <td><input id="quantity2" name="quantity3" size="1" value="0" readonly="readonly" /></td>
+                            <td>Tax</td>
+                            <td><input id="tax" name="tax" size="5" value=0.00 readonly="readonly" /></td>
+
+
+                        </tr>
+                        <tr>
+                            <td>Call of Duty Ghost T-shirt</td>
+                            <td><input id="quantity3" name="quantity3" size="1" value="0" readonly="readonly" /></td>
+                            <td>Total</td>
+                            <td><input id="total" name="total" size="5" value=0.00 readonly="readonly" /></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div id="checkout">
+                    <button name="checkout">
+                        <img src="images/store/checkout.gif" alt="checkout" />
+                    </button>
+                </div>
+            </form>
 
     </section>
               
