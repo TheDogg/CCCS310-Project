@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Gaming Community</title>
+    <link type="text/css" rel="stylesheet" href="styles/layouts.css" />
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body> 
+    <header id="header" role="banner">
+        <div id="title">
+            <img class="logo" src="images/gaming_logo.png" height="75" alt="The Unleashed Fury"/>
+            <img class="logo" src="images/title.png" height="80" alt="The Unleashed Fury"/>
+            <form>  
+                <input type="text" id="search_box" placeholder="Search..." />
+                <input type="button" id="search_button" value="GO" />
+            </form>
+        </div>                   
+    </header>
+    <div id="container">
+        <nav id="navigation" role="navigation">
+            <ul class="navbar">
+                <li class="navbar"><a href="index.html">Home</a></li>
+                <li class="navbar"><a href="news.html">News</a></li>
+                <li class="navbar"><a href="forum.html">Forum</a></li>
+                <li class="navbar"><a href="servers.html">Servers</a></li>
+                <li class="navbar"><a href="join.html">Join</a></li>
+                <li class="navbar"><a href="games.html">Games</a></li>
+                <li class="navbar"><a href="gallery.html">Gallery</a></li>
+                <li class="navbar"><a href="members.html">Members</a></li>
+                <li class="navbar"><a href="profile.html">Profile</a></li>
+            </ul>
+         </nav>            
+        <section id="store" role="main">
+            <h2>Support our community by getting some style!</h2>
+            <h4>only $30.00ca per item</h4>
+            </br>
+            <table>
+                <tr>
+                    <td><h3>Grand theft auto V T-shirt</h3></td>
+                    <td><h3>Battlefield 4 T-shirt</h3></td>
+                    <td><h3>Call of Duty Ghost T-shirt</h3></td>
+                </tr>
+                <tr>
+                    <td class="item"><img src="images/store/gta.png" height="300" width="260"/></td>
+                    <td class="item"><img src="images/store/battle.jpg" height="300" width="260" /></td>
+                    <td class="item"><img src="images/store/ghost.jpg" height="300" width="260" /></td>
+                    
+                      
+                       
+                    
+                </tr>
+                <tr>
+                    <td class="options">
+                        <select name="size" id="size">
+                            <option>SIZE</option>
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                        <select name="qty" id="qty">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td>
+                    <td class="options">
+                        <select name="size" id="size">
+                            <option>SIZE</option>
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                        <select name="qty" id="qty">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td>
+                    <td class="options">
+                        <select name="size" id="size">
+                            <option>SIZE</option>
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                        <select name="qty" id="qty">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td>
+                <tr/>
+                <tr>
+                    <td class="add">
+                        <button name="add"><img src="images/store/add.png" height="50" /></button>
+                    </td>
+                    <td class="add">
+                        <button name="add"><img src="images/store/add.png" height="50" /></button>
+                    </td>
+                    <td class="add">
+                        <button name="add"><img src="images/store/add.png" height="50" /></button>
+                    </td>
+
+                </tr>
+
+            
+            </table>
+            <div id="order">
+                <table>
+                    <tr>
+                        <td>Product</td>
+                        <td class ="cell">Quantity</tdclass>
+                    </tr>
+                    <tr>
+                        <td>Grand theft auto V T-shirt</td>
+                        <td><input class="quantity" name="quantity" size="1" value="0" readonly="readonly" /></td>
+                        <td>Sub-total</td>
+                        <td><input class="calc" name="subtotal" size="5" value=0.00 readonly="readonly" /></td>
+                    </tr>
+                    <tr>
+                        <td>Battlefield 4 T-shirt</td>
+                        <td><input class="quantity" name="quantity" size="1" value="0" readonly="readonly" /></td>
+                        <td>Tax</td>
+                        <td><input class="calc" name="tax" size="5" value=0.00 readonly="readonly" /></td>
+                        
+                       
+                    </tr>
+                    <tr>
+                        <td>Call of Duty Ghost T-shirt</td>
+                        <td><input class="quantity" name="quantity" size="1" value="0" readonly="readonly" /></td>
+                        <td>Total</td>
+                        <td><input class="calc" name="total" size="5" value=0.00 readonly="readonly" /></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div id="checkout">
+                <button name="checkout">
+                    <img src="images/store/checkout.gif" alt="checkout"/>
+                </button>
+            </div>
+
+    </section>
+              
+    <footer id="footer" role="contentinfo">
+            <img class="logo" src="images/title.png" height="30" alt="The Unleashed Fury">
+            The Unleashed Fury 2014 by Sebastien Gascon and Alejandro Ulloa
+            <br>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="terms.html">TERMS</a>
+    </footer>
+
+        
+    </div>
+
+        
+    
+</body>
+</html>
