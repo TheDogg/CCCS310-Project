@@ -13,7 +13,7 @@
               
             document.getElementById("quantity1").value = qty;
 
-            subtotal();
+            total();
                        
         }
 
@@ -24,7 +24,7 @@
 
             document.getElementById("quantity2").value = qty;
 
-            subtotal();
+            total();
 
         }
 
@@ -35,19 +35,25 @@
 
             document.getElementById("quantity3").value = qty;
 
-            subtotal();
+            total();
 
         }
 
-        //Function that calculates sub-total
+        //Function that calculates sub-total-tax-total
 
-        function subtotal() {
+        function total() {
 
-            var stotal = (pharseFloat(document.getElementById("quantity3").value) + pharseFloat(document.getElementById("quantity2").value) + pharseFloat(document.getElementById("quantity1").value)) * 35;
+            var stotal = (parseFloat(document.getElementById("quantity3").value) + parseFloat(document.getElementById("quantity2").value) + parseFloat(document.getElementById("quantity1").value)) * 35;
+            var tax = stotal * .15;
+            var grandTotal = stotal + tax;
 
-            document.getElementById("subtotal").value = stotal;
+            document.getElementById("subtotal").value = stotal.toFixed(2);
+            document.getElementById("tax").value = tax.toFixed(2);
+            document.getElementById("total").value = grandTotal.toFixed(2);
+
         }
 
+     
 
 
 
@@ -132,13 +138,13 @@
                 <tr/>
                 <tr>
                     <td class="add">
-                        <button name="add" onclick="gtaQty()"><img src=" images/store/add.png" height="50" /></button>
+                        <button name="add" onclick="gtaQty()"><img src=" images/store/add.gif" height="80" /></button>
                     </td>
                     <td class="add">
-                        <button name="add" onclick="battleQty()"><img src="images/store/add.png" height="50" /></button>
+                        <button name="add" onclick="battleQty()"><img src="images/store/add.gif" height="80" /></button>
                     </td>
                     <td class="add">
-                        <button name="add" onclick="codQty()"><img src="images/store/add.png" height="50" /></button>
+                        <button name="add" onclick="codQty()"><img src="images/store/add.gif" height="80" /></button>
                     </td>
 
                 </tr>
@@ -161,7 +167,7 @@
                         <tr>
                             <td>Battlefield 4 T-shirt</td>
                             <td><input id="quantity2" name="quantity3" size="1" value="0" readonly="readonly" /></td>
-                            <td>Tax</td>
+                            <td>Tax (15%)</td>
                             <td><input id="tax" name="tax" size="5" value=0.00 readonly="readonly" /></td>
 
 

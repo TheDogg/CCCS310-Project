@@ -348,7 +348,15 @@ input {
 
 .add{
     text-align:center;
+
     
+}
+
+.add button{
+    background-color:transparent;
+    border:none;
+    outline:none;
+    cursor:pointer;
 }
 
 #order{
