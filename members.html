@@ -1,21 +1,21 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Members</title>
-    <link type="text/css" rel="stylesheet" href="styles/desktop.css" />
+    <link type="text/css" rel="stylesheet" href="styles/layouts.css" />
+    
 </head>
-<body>
+<body> 
     <header id="header" role="banner">
         <div id="title">
-            <img class="logo" src="images/gaming_logo.png" height="75" alt="The Unleashed Fury" />
-            <img class="logo" src="images/title.png" height="80" alt="The Unleashed Fury" />
-            <form>
-                <input class="search_box" type="text" value="Search..." />
-                <input class="search_button" type="button" value="GO" />
+            <img class="logo" src="images/gaming_logo.png" height="75" alt="The Unleashed Fury"/>
+            <img class="logo" src="images/title.png" height="80" alt="The Unleashed Fury"/>
+            <form>  
+                <input type="text" class="search_box" placeholder="Search..." />
+                <input type="submit" class="search_button" value="GO" />
             </form>
-        </div>
+        </div>                   
     </header>
     <div id="container">
         <nav id="navigation" role="navigation">
@@ -29,28 +29,77 @@
                 <li class="navbar"><a href="gallery.html">Gallery</a></li>
                 <li class="navbar"><a href="members.html">Members</a></li>
                 <li class="navbar"><a href="profile.html">Profile</a></li>
+                <li class="navbar"><a href="store.html">online store</a></li>
             </ul>
-        </nav>
-        <section id="content" role="main"></section>
-        <section id="sideblock1" role="main">
-            SideBlock 1
-        </section>
-        <section id="sideblock2" role="main">
-            SideBlock 2
-        </section>
-        <section id="sideblock3" role="main">
-            SideBlock 3
-        </section>
+        </nav>      
+        <section id="members">
+            <div>
+                <h3>Featured Members</h3>
+                <ul>
+                    <li class="membersGallery">
+                        <img src="images/profiles/000001.jpg" alt="" />
+                        <div>
+                            <h4>Alien</h4>
+                            <p>Main Game: CoD Ghost</p>
+                            <p>Guild: "MIB"</p>
+                            <p>Range: Ganker</p>
+                        </div>
+                    </li>
+                    <li class="membersGallery">
+                        <img src="images/profiles/000002.jpg" alt="" />
+                        <div>
+                            <h4>Batman</h4>
+                            <p>Main Game: CoD Ghost</p>
+                            <p>Guild: "Super-Heroes"</p>
+                            <p>Range: Hitman</p>
+                        </div>
+                    </li>
+                    <li class="membersGallery">
+                        <img src="images/profiles/000003.jpg" alt="" />
+                        <div>
+                            <h4>Lisa</h4>
+                            <p>Main Game: GTA V</p>
+                            <p>Guild: "ArtZ"</p>
+                            <p>Range: Hitman</p>
+                        </div>
+                    </li>
+                    <li class="membersGallery">
+                        <img src="images/profiles/000004.jpg" alt="" />
+                        <div>
+                            <h4>Sheldon</h4>
+                            <p>Main Game: Battlefield</p>
+                            <p>Guild: "GeekS"</p>
+                            <p>Range: Ganker</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <form name="searchProfile" id="searchProfile" method="post" action="searchProfile.php">
+                    <label>Search for Members </label>
+                    <input type="search" class="search_box" name="keyWord" value="name, nickname, guild..." />
+                    <input type="submit" class="search_button" value="GO" />
 
-        <footer id="footer" role="contentinfo">
+                </form>
+            </div>
+            
+
+        </section>
+         
+       
+    <footer id="footer" role="contentinfo">
             <img class="logo" src="images/title.png" height="30" alt="The Unleashed Fury">
             The Unleashed Fury 2014 by Sebastien Gascon and Alejandro Ulloa
             <br>
             <a href="contact.html">CONTACT</a>
             <a href="about.html">ABOUT</a>
             <a href="terms.html">TERMS</a>
-        </footer>
+    </footer>
 
+        
     </div>
+
+        
+    
 </body>
 </html>

@@ -65,7 +65,7 @@ body {
 
 /* Styling the search form */
 
-#search_box
+.search_box
 {
     padding:3px 3px 3px 3px;
     width:180px;
@@ -74,7 +74,7 @@ body {
     box-shadow:0 1px 2px rgba(0, 0, 0, 0.2) inset;
 }
 
-#search_button
+.search_button
 {
     font-size:13px;
     width: 30px;
@@ -383,3 +383,95 @@ input {
    
 }
 
+/*Styling the Members page. *Source design from http://www.marcofolio.net/ */
+
+
+#members{
+    min-height:80%;
+    background: #1f1f1f;
+    border-width:thin;
+    border-style:solid;
+    border-color:#909090;
+    border-radius:.5em;
+    margin: 5px 0 10px 0;
+    padding:5px 0 5px 0;
+    font-family:Arial, Sans-Serif;
+    text-align:center;
+    color:white;
+}
+
+
+
+#members ul{
+    width:60%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.membersGallery{
+    margin-top:30px;
+    margin-bottom:60px;
+    text-align:center;
+    display: inline;
+    float:left;
+    perspective:500px;
+    transform-style:preserve-3d;
+    transition-property: perspective;
+    transition-duration: 0.5s;
+    -webkit-perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition-property: perspective;
+    -webkit-transition-duration: 0.5s;
+    
+    
+
+}
+
+.membersGallery img{
+    border: 5px solid #fcfafa;
+    transform: rotateY(30deg);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    box-shadow: 0 3px 3px #888;
+    -webkit-transform: rotateY(30deg);
+    -webkit-box-shadow: 0 3px 3px #888;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+}
+
+.membersGallery:hover img {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+
+.membersGallery div{
+    border: 5px solid #fcfafa;
+    padding: 2px;
+    width: 135px;
+    height: 65px;
+    background-color:gray;
+    text-align:left;
+    color:black;
+    font-size:12px;
+    font-weight:lighter;
+    margin: -30px 0 0 0px;
+    position: absolute;
+    transform: translateZ(30px) rotateY(30deg);
+    transition-property: transform, box-shadow,margin;
+    transition-duration: 0.5s;
+    box-shadow: 1px 3px 3px #888;
+    -webkit-transform: translateZ(30px) rotateY(30deg);
+    -webkit-transition-property: transform, margin;
+    -webkit-transition-duration: 0.5s;
+}
+
+.membersGallery:hover div {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+
+#searchProfile{
+    clear:both;
+    padding-top:100px;
+    
+}
