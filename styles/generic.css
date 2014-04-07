@@ -498,3 +498,12 @@ video.resize{
     width:70%;
     padding:20px;
 }
+
+/* Override Link styles for trailers */
+a.trailer {
+    text-decoration: none;
+}
+a:hover.trailer{
+    text-decoration: none;
+    font-weight: normal;
+}
