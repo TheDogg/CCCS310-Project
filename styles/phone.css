@@ -18,7 +18,7 @@
 
 #footer{
     font-size:small;
-    height:45px;
+    height:55px;
 }
 
 .search_box{
@@ -77,4 +77,22 @@ div.imgLeft2:before {
     margin-right:auto;
     margin-left:auto;
     
+}
+
+/*Styling News page*/
+
+#news_container img{
+    display:none;
+}
+
+.news_article {
+    width:100%;
+    padding:20px 5px 5px 5px;
+  
+}
+
+/* Fixing country field width in Join page*/
+
+#country{
+    width:240px;
 }

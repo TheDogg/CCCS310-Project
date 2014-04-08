@@ -12,8 +12,8 @@
             <img class="logo" src="images/gaming_logo.png" height="75" alt="The Unleashed Fury"/>
             <img class="logo" src="images/title.png" height="80" alt="The Unleashed Fury"/>
             <form>  
-                <input type="text" id="search_box" placeholder="Search..." />
-                <input type="button" id="search_button" value="GO" />
+                <input type="text" class="search_box" placeholder="Search..." />
+                <input type="button" class="search_button" value="GO" />
             </form>
         </div>                   
     </header>
@@ -31,34 +31,44 @@
                 <li class="navbar"><a href="videos.html">Videos</a></li>
             </ul>
          </nav>            
-        <section id="news" role="main">
-          <article class="news_element">
-              <img src="images/news/morpheus.jpg" alt="Project Morpheus" />
-              <br />
-              <h2>Sony Computer Entertainment Announces "Project Morpheus"</h2>
-              <br />
-              <p>A virtual reality (VR) system that takes the PlayStation®4 (PS4™) system to the next level of immersion and demonstrates the future of gaming.  SCE will continue development of Morpheus looking towards a future commercial launch.</p>
-          </article>
-          <hr />
-          <article class="news_element">
-              <img src="images/news/leland.jpg" alt="Leland Yee" />
-                <br />
-                <h2>California's anti-game senator Leland Yee arrested</h2>
-                <br />
-                <p>Arrested on corruption, including illegal gun-trafficking.</p>
-            </article>
-         <hr/>
-            <article class="news_element">
-                <img src="images/news/devastation.jpg" alt="Devastation" />
-                <br />
-                <h2>Prepare yourself for Devastation</h2>
-                <br />
-                <p>Prepare yourself for Devastation, the second DLC Pack for Call of Duty®: Ghosts, featuring: four unique multiplayer maps, an all-new tactical 2-in-1 Sub Machine Gun and Assault Rifle, and Episode 2: Mayday – the next installment in Extinction’s four-part episodic narrative.</p>
-            </article>
-          
-            
-            
-        </section>
+        <div id="news" role="main">
+            <table id="news_container">
+                <tr>
+                    <td class="news_article">
+                        <h2>Sony Computer Entertainment Announces "Project Morpheus"</h2>
+                        <br />
+                        <p>A virtual reality (VR) system that takes the PlayStation®4 (PS4™) system to the next level of immersion and demonstrates the future of gaming.  SCE will continue development of Morpheus looking towards a future commercial launch.</p>
+                        <br />
+                        <a href="http://blog.us.playstation.com/2014/03/18/introducing-project-morpheus/">More...</a>
+                    </td>
+                    <td><img src="images/news/morpheus.jpg" alt="Project Morpheus" /></td>
+                </tr>
+                <tr>
+                    <td class="news_article">
+                        <h2>California's anti-game senator Leland Yee arrested</h2>
+                        <br />
+                        <p>Democratic California State Senator Leland Yee – notorious in the gaming industry for his stances on gaming and the gaming industry – has been indicted for public corruption.</p>
+                        <br />
+                        <a href="http://www.mercurynews.com/crime-courts/ci_25423273/bay-area-fbi-serving-multiple-arrest-search-warrants">More...</a>
+                    </td>
+                    <td>
+                        <img src="images/news/leland.jpg" alt="Leland Yee" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="news_article">
+                        <h2>Prepare yourself for Devastation</h2>
+                        <br />
+                        <p>Prepare yourself for Devastation, the second DLC Pack for Call of Duty®: Ghosts, featuring: four unique multiplayer maps, an all-new tactical 2-in-1 Sub Machine Gun and Assault Rifle, and Episode 2: Mayday – the next installment in Extinction’s four-part episodic narrative.</p>
+                        <br />
+                        <a href="http://www.callofduty.com/ghosts/dlc/dlc2-devastation">More...</a>
+                    </td>
+                    <td>
+                        <img src="images/news/devastation.jpg" alt="Devastation" />
+                    </td>
+                </tr>
+            </table>    
+        </div>
         
          
     <footer id="footer" role="contentinfo">
