@@ -57,27 +57,19 @@
 }
 
 /* Styling the Games Page */
+
+
+
 .gameInfo h3 {
+    text-align:left;
     font-size: 16px;
     color: #c8bf50;
-    text-align:center;
-    padding:30px 0 10px 0;
-}
+} 
+
+
 
 /* Inserting images for Games */
-div.imgLeft1:before {
-    margin-right:auto;
-    margin-left:auto;
-}
-div.imgRight1:before {
-    margin-right:auto;
-    margin-left:auto;
-}
-div.imgLeft2:before {
-    margin-right:auto;
-    margin-left:auto;
-    
-}
+
 
 /*Styling News page*/
 
