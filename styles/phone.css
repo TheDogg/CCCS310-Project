@@ -2,9 +2,32 @@
 
 /* Styling the navbar class */
 
-.navbar {   font-size:large;
+.navbar {   font-size:medium;
 }
 
+/*Styling the header*/
+
+.logo{
+    height:50px;
+}
+
+/*Styling footer */
+.logo1{
+    display:none;
+}
+
+#footer{
+    font-size:small;
+    height:45px;
+}
+
+.search_box{
+    display:none;
+}
+
+.search_button{
+    display:none;
+}
 
 /* Removing sideblocks and search field*/
 

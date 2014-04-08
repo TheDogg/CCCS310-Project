@@ -60,7 +60,13 @@ body {
 .logo {
     float: left;
     margin-top:5px;
-    
+}
+
+
+/*Styling footer logo */
+.logo1 {
+    float: left;
+    margin-top:5px;
 }
 
 /* Styling the search form */
@@ -136,6 +142,11 @@ a:hover {
 /*Styling the article selector */
 h2
 {
+    color:#0066ff;
+    text-align: center;
+}
+
+h3{
     color:#0066ff;
     text-align: center;
 }
