@@ -60,13 +60,18 @@ body {
 .logo {
     float: left;
     margin-top:5px;
-    
+}
+
+
+/*Styling footer logo */
+.logo1 {
+    float: left;
+    margin-top:5px;
 }
 
 /* Styling the search form */
 
-.search_box
-{
+.search_box{
     padding:3px 3px 3px 3px;
     width:180px;
     border:1px solid #BCBBBB;
@@ -136,6 +141,11 @@ a:hover {
 /*Styling the article selector */
 h2
 {
+    color:#0066ff;
+    text-align: center;
+}
+
+h3{
     color:#0066ff;
     text-align: center;
 }
@@ -270,7 +280,6 @@ input {
 /* Styling the news container */
 
 #news{
-    min-height:80%;
     background: #1f1f1f;
     border-width:thin;
     border-style:solid;
@@ -283,9 +292,8 @@ input {
     
 }
 
-.news_element{
+#news_container{
     width:90%;
-    height:22em;
     margin-right:auto;
     margin-left:auto;
     margin-top:10px;
@@ -296,11 +304,15 @@ input {
     
 }
 
-.news_element img{
-    margin:20px 0 0 50px;
-    float:right;
+.news_article {
     width:50%;
-    clear:both;
+    padding:20px;
+
+}
+
+#news_container img{
+    width:100%;
+    padding:20px;
 }
 
 /* Styling the Store container*/
